@@ -1,0 +1,26 @@
+{
+  "name": "modernjavascriptdevelopment",
+  "version": "1.0.0",
+  "description": "The main board and resource repository focused around modernizing development environments and project maintenance in the JavaScript/EcmaScript ecosystem",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ModernJavaScriptDevelopment/ModernJavaScriptDevelopment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ModernJavaScriptDevelopment/ModernJavaScriptDevelopment/issues"
+  },
+  "homepage": "https://github.com/ModernJavaScriptDevelopment/ModernJavaScriptDevelopment#readme",
+  "devDependencies": {
+    "docsify-cli": "^4.4.1"
+  }
+}
