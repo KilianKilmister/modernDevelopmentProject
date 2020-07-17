@@ -10,7 +10,6 @@
     maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
       title="docsify-darklight-theme" type="text/css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
   </head>
 
   <body>
@@ -19,18 +18,7 @@
     <script type="module">
       import {edit,darklightTheme} from './scripts/plugins.js'
       // TODO: https://docsify.js.org/#/plugins?id=gitalk
-      var num = 0;
-      mermaid.initialize( {startOnLoad: false} );
       window.$docsify = {
-        share: {
-          // TODO
-          // reddit: true,
-          // linkedin: true,
-          // facebook: true,
-          // twitter: true,
-          // whatsapp: true,
-          // telegram: true,
-        },
         darklightTheme,
         themeColor: "#42b983",
         search: 'auto', // default,
@@ -45,19 +33,7 @@
         repo: 'ModernJavaScriptDevelopment/ModernJavaScriptDevelopment',
         plugins: [
           edit,
-        ],
-        markdown: {
-          renderer: {
-            code: function( code,lang ) {
-              if( lang === "mermaid" ) {
-                return (
-                  '<div class="mermaid">' + mermaid.render( 'mermaid-svg-' + num++,code ) + "</div>"
-                );
-              }
-              return this.origin.code.apply( this,arguments );
-            }
-          }
-        }
+        ]
       }
       // if( typeof navigator.serviceWorker !== 'undefined' ) {
       //   navigator.serviceWorker.register( 'sw.js' )
@@ -65,12 +41,10 @@
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <script defer src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-    <script defer src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-    <script defer src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
-    <script defer src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
-      type="text/javascript"></script>
-    <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <script defer src="//unpkg.com/docsify-share@0.1.1/build/index.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+    <script defer src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js" type="text/javascript">
+    </script>
   </body>
 
 </html>
