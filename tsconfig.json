@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "esnext",
+      "DOM"
+    ],
+    "alwaysStrict": true,
+    "assumeChangesOnlyAffectDirectDependencies": true,
+    "declaration": true,
+    "declarationDir": "@types",
+    "declarationMap": true,
+    "diagnostics": true,
+    "forceConsistentCasingInFileNames": true,
+    "importsNotUsedAsValues": "error",
+    "listEmittedFiles": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "plugins": [],
+    "pretty": true,
+    "rootDir": "src",
+    "sourceMap": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+  },
+  "typeRoots": [
+    "src/customTypings",
+    "node_modules/@types",
+    "node_modules/package-json-type"
+  ],
+  "include": [
+    "src",
+  ]
+}
