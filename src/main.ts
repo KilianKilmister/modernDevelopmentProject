@@ -1,4 +1,7 @@
 import { edit, darklightTheme } from './plugins.js'
+// @ts-ignore
+import './docsify/docsify.js'
+import { install } from './fixed/docsifyShare/index.js'
 const exports = {}
 namespace window {
   export declare var $docsify: any
@@ -31,7 +34,7 @@ window.$docsify = {
   name: 'Modern JavaScript Development Project',
   repo: 'ModernJavaScriptDevelopment/ModernJavaScriptDevelopment',
   plugins: [
-    edit
+    edit, (a, b) => { console.log('instal!!!!!!!'); install(a, b) }
   ],
   markdown: {
     renderer: {
@@ -46,6 +49,6 @@ window.$docsify = {
     }
   }
 }
-// if( typeof navigator.serviceWorker !== 'undefined' ) {
-//   navigator.serviceWorker.register( 'sw.js' )
-// }
+if (typeof navigator.serviceWorker !== 'undefined') {
+  navigator.serviceWorker.register('scripts/sw.js')
+}
