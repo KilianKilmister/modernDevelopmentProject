@@ -52,12 +52,14 @@ const darklightTheme = {
     }
 };
 
+const exports = {};
 var window;
 (function (window) {
 })(window || (window = {}));
 var num = 0;
 mermaid.initialize({ startOnLoad: false });
 window.$docsify = {
+    [Symbol('sadwa')]: exports,
     share: {
         reddit: 'https://www.reddit.com/r/ModernJSDevelopment/'
         // linkedin: true,
@@ -92,6 +94,6 @@ window.$docsify = {
         }
     }
 };
-(async () => {
-    import('./index-0df61bce.js').then(function (n) { return n.i; }); // eslint-disable-line
-})();
+// if( typeof navigator.serviceWorker !== 'undefined' ) {
+//   navigator.serviceWorker.register( 'sw.js' )
+// }

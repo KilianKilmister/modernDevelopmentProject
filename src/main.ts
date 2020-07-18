@@ -1,5 +1,5 @@
 import { edit, darklightTheme } from './plugins.js'
-
+const exports = {}
 namespace window {
   export declare var $docsify: any
 }
@@ -9,6 +9,7 @@ declare const mermaid: any
 var num = 0
 mermaid.initialize({ startOnLoad: false })
 window.$docsify = {
+  [Symbol('sadwa')]: exports,
   share: {
     reddit: 'https://www.reddit.com/r/ModernJSDevelopment/'
     // linkedin: true,
@@ -48,6 +49,3 @@ window.$docsify = {
 // if( typeof navigator.serviceWorker !== 'undefined' ) {
 //   navigator.serviceWorker.register( 'sw.js' )
 // }
-;(async () => {
-  import('docsify-share') // eslint-disable-line
-})()

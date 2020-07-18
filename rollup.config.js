@@ -5,9 +5,10 @@ import commonjs from '@rollup/plugin-commonjs'
 export default {
   input: 'dist/main.js',
   output: {
-    dir: 'docs/scripts',
+    file: 'docs/scripts/main.js',
     format: 'esm'
   },
+  inlineDynamicImports: true,
   preserveEntrySignatures: false,
   plugins: [
     commonjs(),
