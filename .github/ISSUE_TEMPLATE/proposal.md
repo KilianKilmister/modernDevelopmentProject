@@ -25,7 +25,7 @@ assignees: ''
 
 <!-- doesn't have to be too specific but the more fleshed out it is, the easier it gets to define  a project scope -->
 
-## Goals
+## Goals / Target-Specs
 
 <!-- a short bullet point list of concrete goals. keep the items short and to the point -->
 
