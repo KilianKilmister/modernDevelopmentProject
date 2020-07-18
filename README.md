@@ -1,7 +1,9 @@
 # Modern JavaScript Development Project
 The main board and resource repository focused around modernizing development environments and project maintanance in the JavaScript/EcmaScript ecosystem
 
-## Current Focus *(WIP)*
+***IMPORTANT NOTE:** this repository and the [website] are in a very early stage. The current disorder and general incompleteness are being worked on, but will need some time to evolve.*
+
+## Current Focus
 
 ### improved integration and simplified usage of package(-lifetime)-scripts and shell-like scripting
 
@@ -26,3 +28,5 @@ For this I plan on working on a way to include micro-services seamlessly in a pr
 ### easier creation and configuration of projects implementing and aiding in creation of the aforementioned points
 
 This is probably the biggest roadblock for me right now. Having a boiler-plate be as current as possible will require adaptive automation, dynamic recommendations and an easier way to configure and initialize complex projects than anything I've found.
+
+[website]:<https://modernjavascriptdevelopment.github.io/ModernJavaScriptDevelopment>
