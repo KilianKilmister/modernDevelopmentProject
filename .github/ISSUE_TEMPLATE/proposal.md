@@ -7,6 +7,14 @@ assignees: ''
 
 ---
 
+<!-- **NOTES:**
+- take your time. a well layed out proposal can make things a lot easier
+- the structure of this template isn't a requirement, just a suggestion. Feel free to move things around and/or include 
+  additional headers or subheaders.
+- not everything needs to be perfect right away. it's encuraged to refine this intro as the discussion moves along
+
+// MOD-TODO: add link to a 'guide'-page
+-->
 <!-- small intro, not required -->
 
 ## Background 
