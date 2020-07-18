@@ -8,6 +8,7 @@ export default {
     dir: 'docs/scripts',
     format: 'esm'
   },
+  preserveEntrySignatures: false,
   plugins: [
     commonjs(),
     resolve(),

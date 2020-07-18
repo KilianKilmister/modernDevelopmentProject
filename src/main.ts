@@ -24,7 +24,7 @@ window.$docsify = {
   subMaxLevel: 3,
   loadNavbar: true,
   onlyCover: true,
-  coverpage: true,
+  coverpage: '/_coverpage.md',
   notFoundPage: true,
   formatUpdated: '{MM}/{DD} {HH}:{mm}',
   name: 'Modern JavaScript Development Project',
@@ -48,5 +48,6 @@ window.$docsify = {
 // if( typeof navigator.serviceWorker !== 'undefined' ) {
 //   navigator.serviceWorker.register( 'sw.js' )
 // }
-
-import('docsify-share') // eslint-disable-line
+;(async () => {
+  import('docsify-share') // eslint-disable-line
+})()

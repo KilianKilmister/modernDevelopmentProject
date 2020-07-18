@@ -8,19 +8,15 @@
  * The code in this file is generated from files in ./src/
  */
 
-function edit(hook, vm) {
-    hook.beforeEach(function (html) {
-        var url = 'https://github.com/ModernJavaScriptDevelopment/ModernJavaScriptDevelopment/tree/master/docs/' +
-            vm.route.file;
-        var editHtml = '[Edit on **GitHub**](' + url + ')\n';
-        return (html +
-            '\n----\n' +
-            'Last modified  {docsify-updated}  ' +
-            editHtml);
+function edit(hook, { route }) {
+    hook.beforeEach(html => {
+        const url = `https://github.com/ModernJavaScriptDevelopment/ModernJavaScriptDevelopment/tree/master/docs/${route.file}`;
+        const editHtml = `[Edit on **GitHub**](${url})\n`;
+        return `${html}\n----\nLast modified  {docsify-updated}  ${editHtml}`;
     });
 }
 const darklightTheme = {
-    siteFont: "PT Sans",
+    siteFont: 'PT Sans',
     defaultTheme: 'dark',
     codeFontFamily: 'Roboto Mono, Monaco, courier, monospace',
     bodyFontSize: '17px',
@@ -59,7 +55,6 @@ const darklightTheme = {
 var window;
 (function (window) {
 })(window || (window = {}));
-// TODO: https://docsify.js.org/#/plugins?id=gitalk
 var num = 0;
 mermaid.initialize({ startOnLoad: false });
 window.$docsify = {
@@ -78,7 +73,7 @@ window.$docsify = {
     subMaxLevel: 3,
     loadNavbar: true,
     onlyCover: true,
-    coverpage: true,
+    coverpage: '/_coverpage.md',
     notFoundPage: true,
     formatUpdated: '{MM}/{DD} {HH}:{mm}',
     name: 'Modern JavaScript Development Project',
@@ -97,7 +92,6 @@ window.$docsify = {
         }
     }
 };
-// if( typeof navigator.serviceWorker !== 'undefined' ) {
-//   navigator.serviceWorker.register( 'sw.js' )
-// }
-import('./index-0df61bce.js').then(function (n) { return n.i; });
+(async () => {
+    import('./index-0df61bce.js').then(function (n) { return n.i; }); // eslint-disable-line
+})();
