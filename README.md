@@ -5,7 +5,7 @@ The main board and resource repository focused around modernizing development en
 
 The preliminary principles are lined out in this quote i wrote in another project
 
-> ## Current Focus
+> ## My Current Focus
 >
 > ### improved integration and simplified usage of package(-lifetime)-scripts and shell-like scripting
 >
